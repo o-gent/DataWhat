@@ -3,7 +3,7 @@
 
 Could actually be useful if you sent useful information, right?
 
-planned features
+planned features that will never happen 
 - [ ] facebook messenger support
 - [ ] optimise so chrome only runs when sending message
 - [ ] custom youtube video and message 
