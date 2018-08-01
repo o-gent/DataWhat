@@ -43,11 +43,11 @@ def not_first_run():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
-    driver.get("http://www.google.com")
+    driver.get("https://web.whatsapp.com/")
     cookies = pickle.load(open("cookies.pkl", "rb"))
     for cookie in cookies:
         driver.add_cookie(cookie)
-    time.sleep(5)
+    driver.get("http://www.google.com")
     driver.get("https://web.whatsapp.com/")
     return driver
 
