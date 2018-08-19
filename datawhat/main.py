@@ -3,12 +3,13 @@ import pickle
 import threading
 import time
 
-from .scraper import despacito
+from pycli import cli
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
-from pycli import cli
+from .scraper import despacito
+
 
 class datawhat():
     def __init__(self, user_name_list, cli = False):
@@ -93,4 +94,3 @@ def not_first_run(self):
         driver.get("https://web.whatsapp.com/")
         return driver
 """
-
