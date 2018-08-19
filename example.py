@@ -9,7 +9,7 @@ def add(*args):
     return l
 
 cli.add_func(add)
-usr = ['Joe ALLENN']
+usr = ['put_usr_here']
 datawhat = datawhat(usr, cli)
 datawhat.send_message('hello, type /help for list of functions, start each command with /')
 datawhat.send_message('arguments are seperated by spaces, for example:     /add 60 9')
