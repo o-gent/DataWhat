@@ -3,4 +3,5 @@
 
 Check example.py for usage 
 
-### requires selenium
+### requires selenium and chrome driver, put chrome driver in datawhat folder
+http://chromedriver.chromium.org/
