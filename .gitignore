@@ -107,3 +107,4 @@ venv.bak/
 chromedriver.exe
 
 cookies.pkl
+.vscode/settings.json
