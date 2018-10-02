@@ -77,7 +77,7 @@ class datawhat():
                     usr_input = usr_input[1:]
 
             print('user input: ' + str(usr_input))
-            self.send_message(self.cli.input(str(usr_input)))
+            self.send_message(self.cli.cli_input(str(usr_input)))
         else:
             print('cli object not passed to datawhat')
 

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "D:\\Anaconda\\python.exe",
+    "python.pythonPath": "C:\\Users\\olive\\Miniconda3\\python.exe",
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -26,5 +26,7 @@
         "typescript",
         "typescriptreact",
         "yml"
-    ]
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
