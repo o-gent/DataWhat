@@ -63,12 +63,14 @@ class datawhat():
 
     def command_input(self):
         if self.cli:
-            self.send_message('type /help for list of functions, waiting for input: (checks every 15 seconds)'); time.sleep(15)
+            self.send_message('type /help for list of functions, waiting for input: (checks every 4 seconds)')
             ans = False
             while not ans:
                 """
                 cycle through user list
                 """
+                time.sleep(4)
+                
                 usr_input = self.driver.find_elements_by_xpath(
                     "//span[contains(concat(' ', normalize-space(@class), ' '), 'selectable-text invisible-space copyable-text')]")
                 usr_input = usr_input[-1].text

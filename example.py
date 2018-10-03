@@ -1,20 +1,20 @@
 from pycli import cli
 from datawhat import datawhat
+from datawhat import despacito
 
-cli = cli()
 
 def add(*args):
     l = 0
     for i in args: l += i
     return l
 
-def twat():
-    return "twat"
 
+cli = cli()
 cli.add_func(add)
-cli.add_func(twat)
+cli.add_func(despacito)
 
-usr = ['Lucas']
+
+usr = ['user_here']
 datawhat = datawhat(usr, cli)
 datawhat.send_message('hello, type /help for list of functions, start each command with /')
 datawhat.send_message("arguments follow the command by '>' and are seperated by commas, for example:     /add>60,9")
