@@ -54,10 +54,11 @@ class cli(object):
         func = split[0]
 
         try: args = split[1]
-        except: pass
+        except: args = []
         try: args = args.split(',')
-        except: pass
-
+        except: args = []
+        
+        
         for i in range(len(args)):
             try: args[i] = int(args[i])
             except: pass

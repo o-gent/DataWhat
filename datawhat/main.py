@@ -63,9 +63,14 @@ class datawhat():
 
     def command_input(self):
         if self.cli:
-            self.send_message('type /help for list of functions, waiting for input:'); time.sleep(5)
+            self.send_message('type /help for list of functions, waiting for input: (checks every 4 seconds)')
             ans = False
             while not ans:
+                """
+                cycle through user list
+                """
+                time.sleep(4)
+                
                 usr_input = self.driver.find_elements_by_xpath(
                     "//span[contains(concat(' ', normalize-space(@class), ' '), 'selectable-text invisible-space copyable-text')]")
                 usr_input = usr_input[-1].text
@@ -74,7 +79,7 @@ class datawhat():
                     usr_input = usr_input[1:]
                     
             print('user input: ' + str(usr_input))
-            self.send_message(self.cli.input(str(usr_input)))
+            self.send_message(self.cli.cli_input(str(usr_input)))
         else:
             print('cli object not passed to datawhat')
 
