@@ -49,7 +49,7 @@ class cli(object):
             return l
 
     def usr_parse(self, string):
-        """ internal function: gets function and parameters from string """
+        """ gets function and parameters from string """
         split = string.split('>')
         func = split[0]
 
